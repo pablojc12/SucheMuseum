@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MI MUSEO|SUCHE|</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- estilos para las alertas -->
+		<link rel="stylesheet" href="../assets/alerts/themes/alertify.core.css" />
+		<link rel="stylesheet" href="../assets/alerts/themes/alertify.default.css" />
+		
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iconStyle.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+	
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">SUCHE</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="#">mi museo</a></li>
+								<li><a href="#" onclick="cerrarSesion('../')">cerrar sesion</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+					
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2 id="bienbenida"></h2>
+							</div>
+						</header>
+						
+						<section class="wrapper style2">
+							<div class="inner">
+								<section>
+								
+									<!-- Form Carga -->
+									<form action="javascript:;" name="sectionForm">
+									
+										<div class="row uniform" >
+											
+											<!-- Categoria -->
+											<div class="12u$">
+												<div class="select-wrapper">
+													<select name="slcCategoria" id="slcCategoria">
+														<option value="categoria">- selecciona una opcion -</option>
+														<option disabled>-------------</option>
+														<option value="museos">Museo</option>
+														<option value="direcciones">direccion del museo</option>
+														<option value="salas">Salas</option>
+														<option value="exposiciones">Exposiciones</option>
+													</select>
+												</div>
+												<hr/>
+											</div>
+										</div>
+									</form>									
+								</section>
+								
+								<section>
+									<form action="javascript:;" name="form">
+										<div class="row uniform" id="newCode">
+											<!-- vaciado del javascript -->
+										</div>
+										<div class="row iniform" id="imagenUpload">
+											<div class="12u$"><h2>imagenes de la sala</h2></div>
+											<div class="12u$"><strong>Para agregar o modificar una imagen solo da clic en la misma</strong></div>
+											<div class="12u$">.</div>
+											<div class="4u 12u$(small)">
+												<span class="image fit">
+													<img src="../images/pic03.jpg" alt="" name="sin nombre" id="img1"/>
+												</span>
+												<div id="loader1">
+													<strong>Subiendo foto</strong>
+													<img src="../images/loader.gif" alt=""/>
+												</div>
+											</div>
+											<div class="4u 12u$(small)">
+												<span class="image fit">
+													<img src="../images/pic03.jpg" name="sin nombre" alt="" id="img2"/>
+												</span>
+												<div id="loader2">
+													<strong>Subiendo foto</strong>
+													<img src="../images/loader.gif" alt=""/>
+												</div>
+											</div>
+											<div class="4u 12u$(small)">
+												<span class="image fit">
+													<img src="../images/pic03.jpg" alt="" name="sin nombre" id="img3"/>
+												</span>
+												<div id="loader3">
+													<strong>Subiendo foto</strong>
+													<img src="../images/loader.gif" alt=""/>
+												</div>
+											</div>
+											<div class="12u$">
+												<label>Resolucion maxima de 1000 X 1000</label><label>Tamaño maximo de 1mb</label>
+											</div>
+										</div>
+									</form>
+								</section>
+								
+							</div>
+						</section>
+						
+					</section>
+			
+				<!-- Footer -->
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>SUCHE &copy; 7 de diciembre de 2015</li>
+								<li>Design: QUIEN</li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+	
+		<!-- Scripts -->
+			<!-- responsivos -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/ajaxupload.js"></script>
+			
+			<!-- alertas -->
+			<script src="../assets/alerts/lib/alertify.js"></script>
+			<script src="../assets/js/alert.js"></script>
+			
+			<!-- js de validacion y carga -->
+			<script src="../assets/js/motorMain.js"></script>
+			<script src="js/museo.js"></script>
+			<script src="js/salas.js"></script>
+			<script src="js/direccion.js"></script>
+			<script src="js/exposicion.js"></script>
+			<script src='js/eventAjaxUpload.js'></script>
+			<script src="js/accionDirector.js"></script>
+			<script src="js/listener.js"></script>
+			<script src="../assets/js/checkSession.js"></script>
+			<script src="../assets/js/login.js"></script>
+	</body>
+</html>

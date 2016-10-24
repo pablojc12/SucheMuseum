@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SUCHE |Registro|</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!-- estilos para las alertas -->
+		<link rel="stylesheet" href="assets/alerts/themes/alertify.core.css" />
+		<link rel="stylesheet" href="assets/alerts/themes/alertify.default.css" />
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/iconStyle.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+	
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+			
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">SUCHE</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Inicio</a></li>
+								<li><a href="login.html">Iniciar sesion</a></li>
+								<li><a href="#">registrate</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+					
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>REGISTRATE GRATIS</h2>
+							</div>
+						</header>
+						
+						<!-- Content -->
+						<div class="wrapper style2">
+							<div class="inner">
+									<!-- Form Carga -->
+									<form action="javascript:;" name="form">
+									
+										<div class="row uniform">
+											<div class="4u 12u$(small)">
+												<label for="txtNombre">NOMBRE:
+													<input type="text" name="txtNombre" id="txtNombre" onblur="validaText(this.value, 'Nombre incorrecto', this.id)"
+														placeholder='Nombre(s)' autocomplete='off' maxlength='20'>
+												</label>
+											</div>
+											<div class='4u 12u$(small)'>
+												<label for="txtPaterno">APELLIDO PATERNO:
+													<input type='text' name='txtPaterno' id='txtPaterno' onblur='validaText(this.value, "Apellido paterno invalido", this.id)' 
+														placeholder='Apellido Paterno' autocomplete='off' maxlength='20' />
+												</label>
+											</div>
+											<div class='4u$ 12u$(small)'>
+												<label for="txtMaterno">APELLIDO MATERNO:
+													<input type='text' name='txtMaterno' id='txtMaterno' onblur='validaText(this.value, "ERROR de A MATERNO:2 o mas letras sin simbolos", this.id)'
+														placeholder='Apellido Materno' autocomplete='off' maxlength='20' />
+												</label>
+											</div>
+											<div class="12u$"></div>
+											<div class='6u 12u$(small)'>
+												<label for="dtFechaNacimiento">FECHA DE NACIMIENTO:
+													<input type='date' step='1' name='dtFechaNacimiento' id='dtFechaNacimiento' onblur='validarFormatoFecha(this.value, "FECHA INCORRECTA", this.id)' 
+													max='2000-12-01' value='' />
+												</label>
+											</div>
+											<div class='6u$ 12u$(small)'>
+												<label for="tctCorreo">CORREO ELECTRONICO:
+													<input type='email' name='txtCorreo' id='txtCorreo' placeholder='(example@hubART.com)' maxlength='30' onblur='validaEmail(this.value, "CORREO NO VALIDO", this.id)' 
+														autocomplete='off' />
+												</label>
+											</div>
+											<div class="12u$"></div>
+											<div class="6u 12u$(small)">
+												<label for="txtPasword">CONTRASEÑA:
+													<input type="password" name="txtPasword1" id="txtPasword1" onblur="campoVacio(this.value, 'Falta Contraseña', this.id)"/>
+												</label>
+											</div>
+											<div class="6u$ 12u$(small)">
+												<label for="txtPasword">REPITE LA CONTRASEÑA:
+												<input type="password" name="txtPasword2" id="txtPasword2" onblur="compararContrasenia(this.value, document.getElementById('txtPasword1').value, 'txtPasword1')"/>
+												</label>
+											</div>
+											<div class="12u$"></div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><a class="button special" onclick="registrarCliente()">REGISRAR</a></li>
+													<li><input type='reset' value='Borrar Campos' /></li>
+												</ul>
+											</div>
+										</div>
+									</form>									
+							</div>
+						</div>
+						
+					</section>
+			
+				<!-- Footer -->
+					<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>SUCHE &copy; 7 de diciembre de 2015</li>
+								<li>Design: QUIEN</li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+	
+		<!-- Scripts -->
+			<!-- responsivos -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+			<!-- alertas -->
+			<script src="assets/alerts/lib/alertify.js"></script>
+			<script src="assets/js/alert.js"></script>
+			
+			<!-- js de validacion y carga -->
+			<script src="assets/js/motorMain.js"></script>
+			<script src="assets/js/registro.js"></script>
+			<script src="assets/js/checkSesionLogin.js"></script>
+	</body>
+</html>
